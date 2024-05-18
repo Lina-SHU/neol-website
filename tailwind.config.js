@@ -13,6 +13,21 @@ export default {
       xl: '1140px',
       '2xl': '1320px'
     },
+    fontSize: {
+      sm: ['14px', '21px'],
+      base: ['16px', '24px'],
+      lg: ['18px', '27px'],
+      xl: ['20px', '30px'],
+      '2xl': ['24px', '36px'],
+      '3xl': ['30px', '45px'],
+      '4xl': ['32px', '38.4px'],
+      '5xl': ['36px', '54px'],
+      '6xl': ['48px', '72px'],
+      '7xl': ['60px', '90px'],
+      '8xl': ['72px', '108px'],
+      '9xl': ['96px', '144px'],
+      '10xl': ['128px', '192px']
+    },
     extend: {
       colors: {
         primary: {
