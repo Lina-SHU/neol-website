@@ -27,6 +27,9 @@ export default {
           100: '#FAFAFA',
           50: '#FFFFFF'
         }
+      },
+      lineHeight: {
+        75: '1.875rem'
       }
     }
   },
