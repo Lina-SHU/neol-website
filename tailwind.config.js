@@ -19,6 +19,7 @@ export default {
       lg: ['18px', '27px'],
       xl: ['20px', '30px'],
       '2xl': ['24px', '36px'],
+      '2xxl': ['28px', '42px'],
       '3xl': ['30px', '45px'],
       '4xl': ['32px', '38.4px'],
       '5xl': ['36px', '54px'],
@@ -45,6 +46,9 @@ export default {
       },
       lineHeight: {
         75: '1.875rem'
+      },
+      spacing: {
+        30: '120px'
       }
     }
   },
