@@ -8,7 +8,7 @@
           <p class="text-primary-700 mb-6 lg:text-xl">歡迎填寫表單，或直接與我聯絡！</p>
           <p class="text-primary-500 font-normal lg:text-xl">service@hexschool.com</p>
         </div>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled w-[88%] mx-auto lg:w-auto lg:mx-0">
           <li class="mb-6">
             <a href="#" class="flex items-center bg-primary-900 rounded-lg py-1 px-6">
               <img src="../assets/image/list.svg" alt="list" class="me-2" />
