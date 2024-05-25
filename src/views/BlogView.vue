@@ -1,3 +1,7 @@
+<script setup>
+import BlogListComponent from '@/components/BlogListComponent.vue'
+</script>
+
 <template>
   <div class="py-10 lg:pt-30 lg:pb-20">
     <h2 class="flex items-center justify-center mb-4 lg:mb-6">
@@ -13,15 +17,7 @@
     <div class="lg:flex lg:flex-row-reverse lg:flex-wrap lg:-mx-3 lg:items-stretch">
       <!-- 部落格分類選單 -->
       <div class="lg:w-2/12 lg:px-3">
-        <ul class="bg-primary-100 scroll-x flex lg:block lg:h-full 2xl:p-20">
-          <li class="py-5 px-4">
-            <a href="#" class="block border-b border-primary-800 pb-1 lg:text-xl">全部文章</a>
-          </li>
-          <li class="py-5 px-4"><a href="#" class="pb-1 lg:text-xl">UI/UX 新知</a></li>
-          <li class="py-5 px-4"><a href="#" class="pb-1 lg:text-xl">數位產品設計</a></li>
-          <li class="py-5 px-4"><a href="#" class="pb-1 lg:text-xl">平面設計</a></li>
-          <li class="py-5 px-4"><a href="#" class="pb-1 lg:text-xl">前端開發</a></li>
-        </ul>
+        <BlogListComponent />
       </div>
       <!-- 部落格文章 -->
       <div class="pt-10 pb-20 lg:pt-0 lg:pb-0 lg:w-10/12 lg:px-3">
