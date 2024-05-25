@@ -17,11 +17,11 @@ import BlogListComponent from '@/components/BlogListComponent.vue'
   <div class="lg:container lg:pb-30">
     <div class="lg:flex lg:flex-row-reverse lg:flex-wrap lg:-mx-3 lg:items-stretch">
       <!-- 部落格分類選單 -->
-      <div class="lg:w-2/12 lg:px-3">
+      <div class="lg:w-3/12 lg:px-3">
         <BlogListComponent />
       </div>
       <!-- 部落格文章 -->
-      <div class="pt-10 pb-20 lg:pt-0 lg:pb-0 lg:w-10/12 lg:px-3">
+      <div class="pt-10 pb-20 lg:pt-0 lg:pb-0 lg:w-9/12 lg:px-3">
         <ul class="articleList w-[88%] mx-auto lg:w-full">
           <li class="text-primary-700 mb-10 lg:mb-16">
             <RouterLink to="/article" class="lg:flex group">

@@ -6,11 +6,11 @@ import BlogListComponent from '@/components/BlogListComponent.vue'
   <div class="lg:container lg:pb-20 lg:pt-30">
     <div class="lg:flex lg:flex-row-reverse lg:flex-wrap lg:-mx-3 lg:items-stretch">
       <!-- 部落格分類選單 -->
-      <div class="lg:w-2/12 lg:px-3">
+      <div class="lg:w-3/12 lg:px-3">
         <BlogListComponent />
       </div>
       <!-- 部落格內文 -->
-      <div class="pt-8 pb-10 lg:py-0 lg:w-9/12 lg:px-3 lg:mr-auto">
+      <div class="pt-8 pb-10 lg:py-0 lg:w-8/12 lg:px-3 lg:mr-auto">
         <div class="mx-3 text-primary-700 lg:mx-0">
           <div class="flex justify-between text-primary-500 mb-4 lg:mb-10 lg:justify-start">
             <p>數位產品設計</p>
@@ -66,11 +66,49 @@ import BlogListComponent from '@/components/BlogListComponent.vue'
             儘管虛擬實境技術取得了巨大進步，但仍然存在一些技術瓶頸需要克服。例如，許多使用者報告在使用VR設備時出現眩暈和不適感，這與感知延遲和畫面模糊等問題有關。此外，虛擬實境的內容和應用也需要更多的創新和豐富，以滿足不同使用者的需求。
           </p>
           <h3 class="text-xl font-bold text-xl mb-4 lg:text-2xl">未來展望</h3>
-          <p class="text-xl mb-8 lg:mb-0">
+          <p class="text-xl mb-8 lg:mb-10">
             未來，虛擬實境技術將繼續向前發展。我們可以期待更加先進的硬件設備和更加豐富多彩的虛擬內容。同時，介面設計也將繼續演進，以提供更加直觀和便捷的操作方式，進一步增強使用者的沈浸感和參與感。總的來說，虛擬實境技術的未來是充滿希望和潛力的，我們期待著看到它在各個領域中的廣泛應用和發展。
           </p>
           <p>Noel 主筆</p>
         </div>
+      </div>
+      <!-- 相關文章 -->
+      <div
+        class="mx-3 border-t border-primary-400 pt-10 pb-20 lg:container lg:border-0 lg:pt-20 lg:pb-30"
+      >
+        <h2 class="font-bold text-2xl text-center mb-10 lg:text-left lg:text-2xxl">相關文章</h2>
+        <ul class="articleList w-[88%] mx-auto lg:w-full lg:flex lg:flex-wrap lg:-mx-3">
+          <li class="mb-10 lg:mb-0 lg:w-4/12 lg:px-3">
+            <img
+              src="../assets/image/article-image1.png"
+              alt=""
+              class="w-full object-cover rounded-lg mb-4"
+            />
+            <div class="px-2 lg:flex lg:flex-col lg:flex-col-reverse">
+              <div class="flex justify-between items-center mb-4 lg:mb-0">
+                <p class="text-primary-600">2024/02/10</p>
+                <p class="bg-primary-200 text-primary-700 py-1 px-3 rounded-2xl">UI/UX 新知</p>
+              </div>
+              <h3 class="font-bold text-xl lg:mb-4">
+                Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+              </h3>
+            </div>
+          </li>
+          <li class="lg:w-4/12 lg:px-3">
+            <img
+              src="../assets/image/article-image7.png"
+              alt=""
+              class="w-full object-cover rounded-lg mb-4"
+            />
+            <div class="px-2 lg:flex lg:flex-col lg:flex-col-reverse">
+              <div class="flex justify-between items-center mb-4 lg:mb-0">
+                <p class="text-primary-600">2023/07/10</p>
+                <p class="bg-primary-200 text-primary-700 py-1 px-3 rounded-2xl">UI/UX 新知</p>
+              </div>
+              <h3 class="font-bold text-xl lg:mb-4">Vision Pro 來了！UIUX 設計師的未來在哪裡？</h3>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -86,6 +124,15 @@ import BlogListComponent from '@/components/BlogListComponent.vue'
   }
   li {
     display: inline-block;
+  }
+}
+
+.articleList {
+  img {
+    height: 306px;
+    @media (min-width: 960px) {
+      height: 220px;
+    }
   }
 }
 </style>
