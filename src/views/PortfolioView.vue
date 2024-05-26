@@ -130,6 +130,12 @@
         </div>
       </li>
     </ul>
+    <!-- 分頁 -->
+    <ul class="text-2xl flex justify-center">
+      <li class="bg-primary-700 text-primary-50 mr-4 py-[2px] px-[13px] rounded">1</li>
+      <li class="text=primary-700 mr-4 py-[2px] px-[13px] rounded">2</li>
+      <li class="text=primary-700 py-[2px] px-[13px] rounded">3</li>
+    </ul>
   </div>
 </template>
 
