@@ -1,3 +1,9 @@
+<script setup>
+import DialogComponent from '@/components/DialogComponent.vue'
+</script>
+
+ScriptCompileContext
+
 <template>
   <!-- 標題 -->
   <div class="bg-primary-100 pt-10 pb-20 text-center lg:pt-20">
@@ -137,6 +143,7 @@
       <li class="text=primary-700 py-[2px] px-[13px] rounded">3</li>
     </ul>
   </div>
+  <DialogComponent />
 </template>
 
 <style lang="scss" scoped>
