@@ -48,6 +48,7 @@ export default {
         75: '1.875rem'
       },
       spacing: {
+        18: '72px',
         30: '120px'
       }
     }
