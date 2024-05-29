@@ -11,7 +11,9 @@
       </h3>
       <ul class="serviceList lg:flex lg:flex-wrap lg:-mx-3">
         <li class="w-[82%] mx-auto mb-6 lg:w-3/12 lg:px-3 lg:mb-0">
-          <div class="bg-primary-800 flex justify-center items-center rounded-2xl">
+          <div class="bg-service-item flex justify-center items-center rounded-2xl">
+            ;
+
             <div>
               <img
                 src="../assets/image/service-item-visual.svg"
@@ -23,7 +25,7 @@
           </div>
         </li>
         <li class="w-[82%] mx-auto mb-6 lg:w-3/12 lg:px-3 lg:mb-0">
-          <div class="bg-primary-800 flex justify-center items-center rounded-2xl">
+          <div class="bg-service-item flex justify-center items-center rounded-2xl">
             <div>
               <img src="../assets/image/service-item-ui.svg" alt="UI 設計" class="mb-2 mx-auto" />
               <p class="text-white text-center font-bold text-2xl">UI 設計</p>
@@ -31,7 +33,7 @@
           </div>
         </li>
         <li class="w-[82%] mx-auto mb-6 lg:w-3/12 lg:px-3 lg:mb-0">
-          <div class="bg-primary-800 flex justify-center items-center rounded-2xl">
+          <div class="bg-service-item flex justify-center items-center rounded-2xl">
             <div>
               <img
                 src="../assets/image/service-item-html&css.svg"
@@ -43,7 +45,7 @@
           </div>
         </li>
         <li class="w-[82%] mx-auto lg:w-3/12 lg:px-3">
-          <div class="bg-primary-800 flex justify-center items-center rounded-2xl">
+          <div class="bg-service-item flex justify-center items-center rounded-2xl">
             <div>
               <img
                 src="../assets/image/service-item-front-end.svg"
@@ -58,7 +60,7 @@
     </div>
   </section>
   <!-- 服務流程 -->、
-  <section class="bg-sercive bg-primary-800 py-20 lg:py-30">
+  <section class="bg-service bg-primary-800 py-20 lg:py-30">
     <div class="container">
       <h3 class="flex items-center justify-center mb-10 lg:mb-20">
         <img src="../assets/image/title-deco-left-sm.png" alt="" class="lg:hidden" />
@@ -363,11 +365,15 @@
 </template>
 
 <style lang="scss" scoped>
+.bg-service-item {
+  background: linear-gradient(315deg, #1e1e1e 0%, #1e1e1e 49.97%, #000000 50%);
+}
+
 .serviceList li > div {
   height: 306px;
 }
 
-.bg-sercive {
+.bg-service {
   background-image: url('../assets/image/service-item-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
