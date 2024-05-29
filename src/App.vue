@@ -15,5 +15,8 @@ import FooterComponent from '@/components/FooterComponent.vue'
 <style lang="scss" scoped>
 .space-top {
   padding-top: 56px;
+  @media (min-width: 960px) {
+    padding-top: 102px;
+  }
 }
 </style>
