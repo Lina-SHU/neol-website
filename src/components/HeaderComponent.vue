@@ -1,12 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { useWindowSize } from '@vueuse/core'
 
-const { width } = useWindowSize()
-const isMobile = ref(width.value < 960)
-
-const isOpen = ref(width.value < 960)
+const isOpen = ref(true)
 const toggleMenu = () => {
   isOpen.value = !isOpen.value
 }
@@ -28,7 +24,7 @@ const toggleMenu = () => {
       </a>
     </div>
     <div
-      v-if="isOpen || !isMobile"
+      v-if="isOpen"
       class="fixed inset-x-0 top-[56px] bottom-0 z-10 bg-primary-900 bg-opacity-60 transition-opacity lg:static lg:z-20"
     >
       <ul
