@@ -9,7 +9,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <header class="fixed inset-x-0">
+  <header class="fixed inset-x-0 z-50">
     <div class="bg-primary-50 container flex justify-between py-2 lg:relative lg:py-0">
       <h1 class="lg:absolute lg:left-3 lg:top-[28px] lg:z-10">
         <RouterLink to="/">
