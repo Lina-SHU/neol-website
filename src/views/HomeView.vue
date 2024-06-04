@@ -1,6 +1,36 @@
-<script setup></script>
+<script setup>
+import { register } from 'swiper/element/bundle'
+register()
+</script>
 
 <template>
+  <!-- Banner -->
+  <section>
+    <div>
+      <img src="../assets/image/hero-sm.png" alt="" class="w-full object-cover" />
+    </div>
+    <div class="w-[72%] mx-auto py-10">
+      <h2 class="text-center font-bold text-4xl mb-6">Hi！我是 Noel</h2>
+      <p class="text-center text-xl">具有 10 年經驗的</p>
+      <p class="text-center text-xl mb-2">資深 UI 設計師兼前端工程師</p>
+      <p class="text-center text-xl">技術雙修並行，</p>
+      <p class="text-center text-xl mb-4">熱衷於優化使用者的網頁體驗</p>
+      <p class="text-center text-primary-400 mb-8">
+        WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN
+      </p>
+      <ul class="flex justify-center gap-x-4">
+        <li>
+          <a href="#"><img src="../assets/image/instagram.svg" alt="instagram" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/image/facebook.svg" alt="facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/image/youtube.svg" alt="youtube" /></a>
+        </li>
+      </ul>
+    </div>
+  </section>
   <!-- 作品介紹 -->
   <h2 class="flex items-center justify-center py-10 lg:pt-40 lg:pb-20">
     <img src="../assets/image/title-deco-left-sm.png" alt="" class="lg:hidden" />
@@ -10,7 +40,7 @@
     <img src="../assets/image/title-deco-right-lg.png" alt="" class="hidden lg:block" />
   </h2>
   <!-- 星際旅行訂票平台 -->
-  <section class="bg-star lg:pt-20">
+  <section class="bg-star bg-center lg:pt-20">
     <div class="lg:container">
       <div class="lg:flex lg:items-center lg:-mx-3">
         <div class="bg-star-sm bg-center py-[90px] lg:mr-[49px] lg:py-0">
@@ -19,7 +49,7 @@
           </div>
         </div>
         <div
-          class="px-3 pt-6 pb-12 lg:relative lg:z-10 lg:w-6/12 lg:bg-primary-50 lg:bg-opacity-10 lg:rounded-3xl lg:pt-20 lg:pb-14 lg:px-10 2xl:w-4/12"
+          class="px-3 pt-6 pb-12 lg:relative lg:z-10 lg:w-6/12 lg:bg-primary-50 lg:bg-opacity-10 lg:rounded-3xl lg:pt-20 lg:pb-14 lg:px-10 2xl:w-5/12"
         >
           <h3
             class="font-bold text-center text-xl mb-2 lg:text-left lg:text-primary-50 lg:text-2xl"
@@ -53,12 +83,12 @@
     </div>
   </section>
   <!-- 理財APP -->
-  <section class="bg-app lg:py-[200px]">
+  <section class="bg-app bg-center lg:py-[200px]">
     <div class="lg:container">
       <div class="lg:flex lg:items-center lg:-mx-3">
         <div class="bg-app-sm bg-center"></div>
         <div
-          class="px-3 pt-6 pb-20 lg:relative lg:z-10 lg:w-6/12 lg:bg-primary-50 lg:bg-opacity-10 lg:rounded-3xl lg:pt-20 lg:pb-14 lg:px-10 2xl:w-4/12"
+          class="px-3 pt-6 pb-20 lg:relative lg:z-10 lg:w-6/12 lg:bg-primary-50 lg:bg-opacity-10 lg:rounded-3xl lg:pt-20 lg:pb-14 lg:px-10 2xl:w-5/12"
         >
           <h3
             class="font-bold text-center text-xl mb-2 lg:text-left lg:text-primary-50 lg:text-2xl"
@@ -92,7 +122,7 @@
     </div>
   </section>
   <!-- 醫美診所官網 -->
-  <section class="bg-clinic lg:pt-[176px] lg:pb-[112px]">
+  <section class="bg-clinic bg-center lg:pt-[176px] lg:pb-[112px]">
     <div class="lg:container">
       <div class="lg:flex lg:items-center lg:-mx-3">
         <div class="bg-clinic-sm bg-center py-[90px] lg:mr-[49px] lg:py-0">
@@ -101,7 +131,7 @@
           </div>
         </div>
         <div
-          class="px-3 pt-6 pb-20 lg:relative lg:z-10 lg:w-6/12 lg:bg-primary-50 lg:bg-opacity-10 lg:rounded-3xl lg:pt-20 lg:pb-14 lg:px-10 2xl:w-4/12"
+          class="px-3 pt-6 pb-20 lg:relative lg:z-10 lg:w-6/12 lg:bg-primary-50 lg:bg-opacity-10 lg:rounded-3xl lg:pt-20 lg:pb-14 lg:px-10 2xl:w-5/12"
         >
           <h3
             class="font-bold text-center text-xl mb-2 lg:text-left lg:text-primary-50 lg:text-2xl"
@@ -203,6 +233,102 @@
       </div>
     </div>
   </section>
+  <!-- 精選文章 -->
+  <section class="py-20">
+    <h2 class="flex items-center justify-center py-10 lg:pt-40 lg:pb-20">
+      <img src="../assets/image/title-deco-left-sm.png" alt="" class="lg:hidden" />
+      <img src="../assets/image/title-deco-left-lg.png" alt="" class="hidden lg:block" />
+      <span class="text-primary-700 text-2xl font-bold mx-4 lg:text-4xl">精選文章</span>
+      <img src="../assets/image/title-deco-right-sm.png" alt="" class="lg:hidden" />
+      <img src="../assets/image/title-deco-right-lg.png" alt="" class="hidden lg:block" />
+    </h2>
+    <div class="articleHeight container">
+      <swiper-container
+        class="swiper articleSwiper"
+        loop="true"
+        spaceBetween="24"
+        slidesPerView="1"
+        :pagination="true"
+        :breakpoints="{
+          960: {
+            slidesPerView: 3,
+            'grid.rows': 1
+          }
+        }"
+      >
+        <swiper-slide class="mb-12 lg:mb-0">
+          <img
+            src="../assets/image/article-image2.png"
+            alt="article-image"
+            class="w-full object-cover rounded-lg"
+          />
+          <div class="pt-4 px-2">
+            <h4 class="font-bold text-xl mb-4">
+              Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+            </h4>
+            <div class="flex justify-between items-center">
+              <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
+              <p class="text-primary-600">2024/02/10</p>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="mb-12 lg:mb-0">
+          <img
+            src="../assets/image/article-image3.png"
+            alt="article-image"
+            class="w-full object-cover rounded-lg"
+          />
+          <div class="pt-4 px-2">
+            <h4 class="font-bold text-xl mb-4">
+              給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+            </h4>
+            <div class="flex justify-between items-center">
+              <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
+              <p class="text-primary-600">2023/11/20</p>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            src="../assets/image/article-image1.png"
+            alt="article-image"
+            class="w-full object-cover rounded-lg"
+          />
+          <div class="pt-4 px-2">
+            <h4 class="font-bold text-xl mb-4">
+              給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
+            </h4>
+            <div class="flex justify-between items-center">
+              <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
+              <p class="text-primary-600">2023/10/18</p>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="mb-12 lg:mb-0">
+          <img
+            src="../assets/image/article-image2.png"
+            alt="article-image"
+            class="w-full object-cover rounded-lg"
+          />
+          <div class="pt-4 px-2">
+            <h4 class="font-bold text-xl mb-4">
+              Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+            </h4>
+            <div class="flex justify-between items-center">
+              <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
+              <p class="text-primary-600">2024/02/10</p>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+      <button
+        class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto mt-10 lg:hidden"
+      >
+        更多文章
+        <img src="../assets/image/arrow.svg" alt="arrow" class="ml-2" />
+      </button>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -301,5 +427,33 @@
 
 .serviceList li > div {
   height: 306px;
+}
+
+.articleHeight.container {
+  overflow: hidden;
+  height: 400px;
+}
+
+:deep(.articleSwiper::part(container)) {
+  overflow: visible;
+}
+
+:deep(.articleSwiper::part(pagination)) {
+  display: none;
+  @media (min-width: 960px) {
+    bottom: -40px;
+    display: block;
+  }
+}
+
+:deep(.articleSwiper::part(bullet)) {
+  width: 12px;
+  height: 12px;
+}
+
+:deep(.articleSwiper::part(bullet-active)) {
+  background-color: #000000;
+  width: 12px;
+  height: 12px;
 }
 </style>
