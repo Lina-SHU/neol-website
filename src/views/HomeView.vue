@@ -12,7 +12,7 @@ register()
         <img src="../assets/image/hero-lg.png" alt="" class="object-cover hidden lg:block" />
       </div>
       <div class="lg:container">
-        <div class="lg:flex lg:flex-wrap lg:-mx-3 lg:flex-row-reverse">
+        <div class="lg:flex lg:flex-wrap lg:-mx-3">
           <div class="w-[72%] mx-auto py-10 lg:w-5/12 lg:px-3 lg:mr-auto lg:ml-0">
             <h2 class="text-center font-bold text-4xl mb-6 lg:text-[40px] lg:text-left">
               Hi！我是 Noel
