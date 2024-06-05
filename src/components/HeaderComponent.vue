@@ -4,7 +4,10 @@ import { RouterLink } from 'vue-router'
 
 const isOpen = ref(true)
 const toggleMenu = () => {
-  isOpen.value = !isOpen.value
+  // 手機板收合
+  if (window.innerWidth < 960) {
+    isOpen.value = !isOpen.value
+  }
 }
 </script>
 
