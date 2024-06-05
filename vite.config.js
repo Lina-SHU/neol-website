@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/neol-website/',
+  base: process.env.NODE_ENV === 'production' ? '/neol-website/' : '/',
   plugins: [vue()],
   resolve: {
     alias: {
