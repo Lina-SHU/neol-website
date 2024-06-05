@@ -6,29 +6,42 @@ register()
 <template>
   <!-- Banner -->
   <section>
-    <div>
-      <img src="../assets/image/hero-sm.png" alt="" class="w-full object-cover" />
-    </div>
-    <div class="w-[72%] mx-auto py-10">
-      <h2 class="text-center font-bold text-4xl mb-6">Hi！我是 Noel</h2>
-      <p class="text-center text-xl">具有 10 年經驗的</p>
-      <p class="text-center text-xl mb-2">資深 UI 設計師兼前端工程師</p>
-      <p class="text-center text-xl">技術雙修並行，</p>
-      <p class="text-center text-xl mb-4">熱衷於優化使用者的網頁體驗</p>
-      <p class="text-center text-primary-400 mb-8">
-        WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN
-      </p>
-      <ul class="flex justify-center gap-x-4">
-        <li>
-          <a href="#"><img src="../assets/image/instagram.svg" alt="instagram" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="../assets/image/facebook.svg" alt="facebook" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="../assets/image/youtube.svg" alt="youtube" /></a>
-        </li>
-      </ul>
+    <div class="lg:flex lg:flex-row-reverse lg:items-center lg:flex-wrap lg:relative lg:h-[480px]">
+      <div class="lg:w-[60%] lg:absolute lg:right-0 lg:top-0">
+        <img src="../assets/image/hero-sm.png" alt="" class="w-full object-cover lg:hidden" />
+        <img src="../assets/image/hero-lg.png" alt="" class="object-cover hidden lg:block" />
+      </div>
+      <div class="lg:container">
+        <div class="lg:flex lg:flex-wrap lg:-mx-3 lg:flex-row-reverse">
+          <div class="w-[72%] mx-auto py-10 lg:w-5/12 lg:px-3 lg:mr-auto lg:ml-0">
+            <h2 class="text-center font-bold text-4xl mb-6 lg:text-[40px] lg:text-left">
+              Hi！我是 Noel
+            </h2>
+            <div class="lg:flex">
+              <p class="text-center text-xl">具有 10 年經驗的</p>
+              <p class="text-center text-xl mb-2">資深 UI 設計師兼前端工程師</p>
+            </div>
+            <div class="lg:flex">
+              <p class="text-center text-xl">技術雙修並行，</p>
+              <p class="text-center text-xl mb-4">熱衷於優化使用者的網頁體驗</p>
+            </div>
+            <p class="text-center text-primary-400 mb-8 lg:text-left">
+              WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN
+            </p>
+            <ul class="flex justify-center gap-x-4 lg:justify-start">
+              <li>
+                <a href="#"><img src="../assets/image/instagram.svg" alt="instagram" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/image/facebook.svg" alt="facebook" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/image/youtube.svg" alt="youtube" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- 作品介紹 -->
