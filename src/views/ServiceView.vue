@@ -11,7 +11,7 @@
       </h3>
       <ul class="serviceList lg:flex lg:flex-wrap lg:-mx-3">
         <li class="w-[82%] mx-auto mb-6 lg:w-3/12 lg:px-3 lg:mb-0">
-          <div class="bg-service-item flex justify-center items-center rounded-2xl">
+          <div class="bg-service flex justify-center items-center rounded-2xl">
             ;
 
             <div>
@@ -25,7 +25,7 @@
           </div>
         </li>
         <li class="w-[82%] mx-auto mb-6 lg:w-3/12 lg:px-3 lg:mb-0">
-          <div class="bg-service-item flex justify-center items-center rounded-2xl">
+          <div class="bg-service flex justify-center items-center rounded-2xl">
             <div>
               <img src="../assets/image/service-item-ui.svg" alt="UI 設計" class="mb-2 mx-auto" />
               <p class="text-white text-center font-bold text-2xl">UI 設計</p>
@@ -33,7 +33,7 @@
           </div>
         </li>
         <li class="w-[82%] mx-auto mb-6 lg:w-3/12 lg:px-3 lg:mb-0">
-          <div class="bg-service-item flex justify-center items-center rounded-2xl">
+          <div class="bg-service flex justify-center items-center rounded-2xl">
             <div>
               <img
                 src="../assets/image/service-item-html&css.svg"
@@ -45,7 +45,7 @@
           </div>
         </li>
         <li class="w-[82%] mx-auto lg:w-3/12 lg:px-3">
-          <div class="bg-service-item flex justify-center items-center rounded-2xl">
+          <div class="bg-service flex justify-center items-center rounded-2xl">
             <div>
               <img
                 src="../assets/image/service-item-front-end.svg"
@@ -69,7 +69,7 @@
         <img src="../assets/image/title-deco-right-sm.png" alt="" class="lg:hidden" />
         <img src="../assets/image/title-deco-right-lg.png" alt="" class="hidden lg:block" />
       </h3>
-      <ul class="processList">
+      <ol class="processList">
         <li
           class="bg-primary-700 rounded border border-primary-500 px-6 py-6 pb-12 mb-16 lg:w-1/2 lg:mx-auto lg:p-8"
         >
@@ -183,7 +183,7 @@
             </div>
           </div>
         </li>
-      </ul>
+      </ol>
     </div>
   </section>
   <!-- 價格表 -->
@@ -365,19 +365,12 @@
 </template>
 
 <style lang="scss" scoped>
-.bg-service-item {
+.bg-service {
   background: linear-gradient(315deg, #1e1e1e 0%, #1e1e1e 49.97%, #000000 50%);
 }
 
 .serviceList li > div {
   height: 306px;
-}
-
-.bg-service {
-  background-image: url('../assets/image/service-item-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .processList li {

@@ -42,11 +42,11 @@ ScriptCompileContext
   <div class="container py-20 lg:py-30">
     <ul class="caseList lg:flex lg:flex-wrap lg:justify-between lg:-mx-3">
       <li class="mb-12 lg:w-1/2 lg:px-3 lg:mb-20">
-        <a href="#" @click.prevent="handleDialog">
+        <a href="#" @click.prevent="handleDialog" class="group">
           <img
             src="../assets/image/work-image1.png"
             alt="work-image"
-            class="w-full object-cover rounded mb-4"
+            class="w-full object-cover rounded mb-4 group-hover:opacity-70"
           />
           <div class="mx-4">
             <h3 class="font-bold text-xl text-primary-700 mb-2 lg:text-2xxl">星際旅行訂票平台</h3>
@@ -60,11 +60,11 @@ ScriptCompileContext
         </a>
       </li>
       <li class="mb-12 lg:w-1/2 lg:px-3 lg:mb-20">
-        <a href="#" @click.prevent="handleDialog">
+        <a href="#" @click.prevent="handleDialog" class="group">
           <img
             src="../assets/image/work-image2.png"
             alt="work-image"
-            class="w-full object-cover rounded mb-4"
+            class="w-full object-cover rounded mb-4 group-hover:opacity-70"
           />
           <div class="mx-4">
             <h3 class="font-bold text-xl text-primary-700 mb-2 lg:text-2xxl">理財App</h3>
@@ -80,11 +80,11 @@ ScriptCompileContext
         </a>
       </li>
       <li class="mb-12 lg:w-1/2 lg:px-3 lg:mb-20">
-        <a href="#" @click.prevent="handleDialog">
+        <a href="#" @click.prevent="handleDialog" class="group">
           <img
             src="../assets/image/work-image3.png"
             alt="work-image"
-            class="w-full object-cover rounded mb-4"
+            class="w-full object-cover rounded mb-4 group-hover:opacity-70"
           />
           <div class="mx-4">
             <h3 class="font-bold text-xl text-primary-700 mb-2 lg:text-2xxl">醫美診所官網</h3>
@@ -98,11 +98,11 @@ ScriptCompileContext
         </a>
       </li>
       <li class="mb-12 lg:w-1/2 lg:px-3 lg:mb-20">
-        <a href="#" @click.prevent="handleDialog">
+        <a href="#" @click.prevent="handleDialog" class="group">
           <img
             src="../assets/image/work-image4.png"
             alt="work-image"
-            class="w-full object-cover rounded mb-4"
+            class="w-full object-cover rounded mb-4 group-hover:opacity-70"
           />
           <div class="mx-4">
             <h3 class="font-bold text-xl text-primary-700 mb-2 lg:text-2xxl">
@@ -118,11 +118,11 @@ ScriptCompileContext
         </a>
       </li>
       <li class="mb-12 lg:w-1/2 lg:px-3 lg:mb-20">
-        <a href="#" @click.prevent="handleDialog">
+        <a href="#" @click.prevent="handleDialog" class="group">
           <img
             src="../assets/image/work-image5.png"
             alt="work-image"
-            class="w-full object-cover rounded mb-4"
+            class="w-full object-cover rounded mb-4 group-hover:opacity-70"
           />
           <div class="mx-4">
             <h3 class="font-bold text-xl text-primary-700 mb-2 lg:text-2xxl">電影院訂票系統</h3>
@@ -136,11 +136,11 @@ ScriptCompileContext
         </a>
       </li>
       <li class="mb-12 lg:w-1/2 lg:px-3 lg:mb-20">
-        <a href="#" @click.prevent="handleDialog">
+        <a href="#" @click.prevent="handleDialog" class="group">
           <img
             src="../assets/image/work-image6.png"
             alt="work-image"
-            class="w-full object-cover rounded mb-4"
+            class="w-full object-cover rounded mb-4 group-hover:opacity-70"
           />
           <div class="mx-4">
             <h3 class="font-bold text-xl text-primary-700 mb-2 lg:text-2xxl">
@@ -158,9 +158,21 @@ ScriptCompileContext
     </ul>
     <!-- 分頁 -->
     <ul class="text-2xl flex justify-center">
-      <li class="bg-primary-700 text-primary-50 mr-4 py-[2px] px-[13px] rounded">1</li>
-      <li class="text=primary-700 mr-4 py-[2px] px-[13px] rounded">2</li>
-      <li class="text=primary-700 py-[2px] px-[13px] rounded">3</li>
+      <li
+        class="bg-primary-700 text-primary-50 mr-4 py-[2px] px-[13px] rounded hover:bg-primary-500"
+      >
+        <a href="#" class="block">1</a>
+      </li>
+      <li
+        class="text=primary-700 mr-4 py-[2px] px-[13px] rounded hover:text-primary-100 hover:bg-primary-500"
+      >
+        <a href="#" class="block">2</a>
+      </li>
+      <li
+        class="text=primary-700 py-[2px] px-[13px] rounded hover:text-primary-100 hover:bg-primary-500"
+      >
+        <a href="#" class="block">3</a>
+      </li>
     </ul>
   </div>
   <DialogComponent :show-dialog="showDialog" @handleDialog="handleDialog" />

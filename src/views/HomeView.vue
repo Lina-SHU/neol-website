@@ -272,68 +272,76 @@ register()
         }"
       >
         <swiper-slide class="mb-12 lg:mb-0">
-          <img
-            src="../assets/image/article-image2.png"
-            alt="article-image"
-            class="w-full object-cover rounded-lg"
-          />
-          <div class="pt-4 px-2">
-            <h4 class="font-bold text-xl mb-4">
-              Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-            </h4>
-            <div class="flex justify-between items-center">
-              <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
-              <p class="text-primary-600">2024/02/10</p>
+          <RouterLink to="/article" class="block">
+            <img
+              src="../assets/image/article-image2.png"
+              alt="article-image"
+              class="w-full object-cover rounded-lg"
+            />
+            <div class="pt-4 px-2">
+              <h4 class="font-bold text-xl mb-4">
+                Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+              </h4>
+              <div class="flex justify-between items-center">
+                <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
+                <p class="text-primary-600">2024/02/10</p>
+              </div>
             </div>
-          </div>
+          </RouterLink>
         </swiper-slide>
         <swiper-slide class="mb-12 lg:mb-0">
-          <img
-            src="../assets/image/article-image3.png"
-            alt="article-image"
-            class="w-full object-cover rounded-lg"
-          />
-          <div class="pt-4 px-2">
-            <h4 class="font-bold text-xl mb-4">
-              給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
-            </h4>
-            <div class="flex justify-between items-center">
-              <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
-              <p class="text-primary-600">2023/11/20</p>
+          <RouterLink to="/article" class="block">
+            <img
+              src="../assets/image/article-image3.png"
+              alt="article-image"
+              class="w-full object-cover rounded-lg"
+            />
+            <div class="pt-4 px-2">
+              <h4 class="font-bold text-xl mb-4">
+                給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+              </h4>
+              <div class="flex justify-between items-center">
+                <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
+                <p class="text-primary-600">2023/11/20</p>
+              </div>
             </div>
-          </div>
+          </RouterLink>
         </swiper-slide>
         <swiper-slide>
-          <img
-            src="../assets/image/article-image1.png"
-            alt="article-image"
-            class="w-full object-cover rounded-lg"
-          />
-          <div class="pt-4 px-2">
-            <h4 class="font-bold text-xl mb-4">
-              給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
-            </h4>
-            <div class="flex justify-between items-center">
-              <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
-              <p class="text-primary-600">2023/10/18</p>
+          <RouterLink to="/article" class="block">
+            <img
+              src="../assets/image/article-image1.png"
+              alt="article-image"
+              class="w-full object-cover rounded-lg"
+            />
+            <div class="pt-4 px-2">
+              <h4 class="font-bold text-xl mb-4">
+                給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
+              </h4>
+              <div class="flex justify-between items-center">
+                <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
+                <p class="text-primary-600">2023/10/18</p>
+              </div>
             </div>
-          </div>
+          </RouterLink>
         </swiper-slide>
         <swiper-slide class="mb-12 lg:mb-0">
-          <img
-            src="../assets/image/article-image2.png"
-            alt="article-image"
-            class="w-full object-cover rounded-lg"
-          />
-          <div class="pt-4 px-2">
-            <h4 class="font-bold text-xl mb-4">
-              Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-            </h4>
-            <div class="flex justify-between items-center">
-              <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
-              <p class="text-primary-600">2024/02/10</p>
+          <RouterLink to="/article" class="block">
+            <img
+              src="../assets/image/article-image2.png"
+              alt="article-image"
+              class="w-full object-cover rounded-lg"
+            />
+            <div class="pt-4 px-2">
+              <h4 class="font-bold text-xl mb-4">
+                Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+              </h4>
+              <div class="flex justify-between items-center">
+                <p class="text-primary-700 bg-primary-200 rounded-2xl py-1 px-3">UI/UX 新知</p>
+                <p class="text-primary-600">2024/02/10</p>
+              </div>
             </div>
-          </div>
+          </RouterLink>
         </swiper-slide>
       </swiper-container>
       <button

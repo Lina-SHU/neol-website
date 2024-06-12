@@ -79,34 +79,40 @@ import BlogListComponent from '@/components/BlogListComponent.vue'
         <h2 class="font-bold text-2xl text-center mb-10 lg:text-left lg:text-2xxl">相關文章</h2>
         <ul class="articleList w-[88%] mx-auto lg:w-full lg:flex lg:flex-wrap lg:-mx-3">
           <li class="mb-10 lg:mb-0 lg:w-4/12 lg:px-3">
-            <img
-              src="../assets/image/article-image1.png"
-              alt=""
-              class="w-full object-cover rounded-lg mb-4"
-            />
-            <div class="px-2 lg:flex lg:flex-col lg:flex-col-reverse">
-              <div class="flex justify-between items-center mb-4 lg:mb-0">
-                <p class="text-primary-600">2024/02/10</p>
-                <p class="bg-primary-200 text-primary-700 py-1 px-3 rounded-2xl">UI/UX 新知</p>
+            <RouterLink to="/article" class="block group">
+              <img
+                src="../assets/image/article-image1.png"
+                alt=""
+                class="w-full object-cover rounded-lg mb-4 group-hover:opacity-70"
+              />
+              <div class="px-2 lg:flex lg:flex-col lg:flex-col-reverse">
+                <div class="flex justify-between items-center mb-4 lg:mb-0">
+                  <p class="text-primary-600">2024/02/10</p>
+                  <p class="bg-primary-200 text-primary-700 py-1 px-3 rounded-2xl">UI/UX 新知</p>
+                </div>
+                <h3 class="font-bold text-xl lg:mb-4">
+                  Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+                </h3>
               </div>
-              <h3 class="font-bold text-xl lg:mb-4">
-                Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-              </h3>
-            </div>
+            </RouterLink>
           </li>
           <li class="lg:w-4/12 lg:px-3">
-            <img
-              src="../assets/image/article-image7.png"
-              alt=""
-              class="w-full object-cover rounded-lg mb-4"
-            />
-            <div class="px-2 lg:flex lg:flex-col lg:flex-col-reverse">
-              <div class="flex justify-between items-center mb-4 lg:mb-0">
-                <p class="text-primary-600">2023/07/10</p>
-                <p class="bg-primary-200 text-primary-700 py-1 px-3 rounded-2xl">UI/UX 新知</p>
+            <RouterLink to="/article" class="block group">
+              <img
+                src="../assets/image/article-image7.png"
+                alt=""
+                class="w-full object-cover rounded-lg mb-4 group-hover:opacity-70"
+              />
+              <div class="px-2 lg:flex lg:flex-col lg:flex-col-reverse">
+                <div class="flex justify-between items-center mb-4 lg:mb-0">
+                  <p class="text-primary-600">2023/07/10</p>
+                  <p class="bg-primary-200 text-primary-700 py-1 px-3 rounded-2xl">UI/UX 新知</p>
+                </div>
+                <h3 class="font-bold text-xl lg:mb-4">
+                  Vision Pro 來了！UIUX 設計師的未來在哪裡？
+                </h3>
               </div>
-              <h3 class="font-bold text-xl lg:mb-4">Vision Pro 來了！UIUX 設計師的未來在哪裡？</h3>
-            </div>
+            </RouterLink>
           </li>
         </ul>
       </div>
