@@ -35,26 +35,104 @@ const toggleMenu = () => {
         @click.prevent="toggleMenu"
       >
         <li>
-          <RouterLink to="/" class="text-xl block text-center pb-3 lg:py-1 lg:px-2"
-            >首頁</RouterLink
-          >
+          <RouterLink to="/" class="text-xl block relative text-center pb-3 group lg:py-1 lg:px-2">
+            首頁
+            <!-- hover -->
+            <div
+              class="w-2 h-2 border-t border-l border-primary-500 absolute top-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-t border-r border-primary-500 absolute top-0 right-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-l border-primary-500 absolute bottom-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-r border-primary-500 absolute bottom-0 right-0 hidden group-hover:block"
+            ></div>
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/portfolio" class="text-xl block text-center py-3 lg:py-1 lg:px-2"
-            >作品集</RouterLink
+          <RouterLink
+            to="/portfolio"
+            class="text-xl block relative text-center py-3 group lg:py-1 lg:px-2"
           >
+            作品集
+            <!-- hover -->
+            <div
+              class="w-2 h-2 border-t border-l border-primary-500 absolute top-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-t border-r border-primary-500 absolute top-0 right-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-l border-primary-500 absolute bottom-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-r border-primary-500 absolute bottom-0 right-0 hidden group-hover:block"
+            ></div>
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/service" class="text-xl block text-center py-3 lg:py-1 lg:px-2"
-            >服務項目</RouterLink
+          <RouterLink
+            to="/service"
+            class="text-xl block relative text-center py-3 group lg:py-1 lg:px-2"
           >
+            服務項目
+            <!-- hover -->
+            <div
+              class="w-2 h-2 border-t border-l border-primary-500 absolute top-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-t border-r border-primary-500 absolute top-0 right-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-l border-primary-500 absolute bottom-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-r border-primary-500 absolute bottom-0 right-0 hidden group-hover:block"
+            ></div>
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/blog" class="text-xl block text-center py-3 lg:py-1 lg:px-2"
-            >部落格</RouterLink
+          <RouterLink
+            to="/blog"
+            class="text-xl block relative text-center py-3 group lg:py-1 lg:px-2"
           >
+            部落格
+            <!-- hover -->
+            <div
+              class="w-2 h-2 border-t border-l border-primary-500 absolute top-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-t border-r border-primary-500 absolute top-0 right-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-l border-primary-500 absolute bottom-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-r border-primary-500 absolute bottom-0 right-0 hidden group-hover:block"
+            ></div>
+          </RouterLink>
         </li>
-        <li><a href="#" class="text-xl block text-center pt-3 lg:py-1 lg:px-2">聯絡我</a></li>
+        <li>
+          <a href="#" class="text-xl block relative text-center pt-3 group lg:py-1 lg:px-2">
+            聯絡我
+            <!-- hover -->
+            <div
+              class="w-2 h-2 border-t border-l border-primary-500 absolute top-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-t border-r border-primary-500 absolute top-0 right-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-l border-primary-500 absolute bottom-0 left-0 hidden group-hover:block"
+            ></div>
+            <div
+              class="w-2 h-2 border-b border-r border-primary-500 absolute bottom-0 right-0 hidden group-hover:block"
+            ></div>
+          </a>
+        </li>
       </ul>
     </div>
   </header>
