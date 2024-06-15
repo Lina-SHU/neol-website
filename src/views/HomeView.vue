@@ -32,13 +32,19 @@ register()
             </p>
             <ul class="flex justify-center gap-x-4 xl:justify-start">
               <li>
-                <a href="#"><img src="../assets/image/instagram.svg" alt="instagram" /></a>
+                <a href="#" class="hover:opacity-50"
+                  ><img src="../assets/image/instagram.svg" alt="instagram"
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="../assets/image/facebook.svg" alt="facebook" /></a>
+                <a href="#" class="hover:opacity-50"
+                  ><img src="../assets/image/facebook.svg" alt="facebook"
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="../assets/image/youtube.svg" alt="youtube" /></a>
+                <a href="#" class="hover:opacity-50"
+                  ><img src="../assets/image/youtube.svg" alt="youtube"
+                /></a>
               </li>
             </ul>
           </div>
@@ -88,10 +94,10 @@ register()
             </li>
           </ul>
           <button
-            class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto lg:text-xl lg:px-8 lg:py-4"
+            class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto hover:bg-primary-700 group lg:text-xl lg:px-8 lg:py-4"
           >
             完整介紹
-            <img src="../assets/image/arrow.svg" alt="" />
+            <img src="../assets/image/arrow.svg" alt="" class="group-hover:translate-x-2 ms-2" />
           </button>
         </div>
       </div>
@@ -127,10 +133,10 @@ register()
             </li>
           </ul>
           <button
-            class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto lg:text-xl lg:px-8 lg:py-4"
+            class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto hover:bg-primary-700 group lg:text-xl lg:px-8 lg:py-4"
           >
             完整介紹
-            <img src="../assets/image/arrow.svg" alt="" />
+            <img src="../assets/image/arrow.svg" alt="" class="group-hover:translate-x-2 ms-2" />
           </button>
         </div>
       </div>
@@ -170,10 +176,10 @@ register()
             </li>
           </ul>
           <button
-            class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto lg:text-xl lg:px-8 lg:py-4"
+            class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto hover:bg-primary-700 group lg:text-xl lg:px-8 lg:py-4"
           >
             完整介紹
-            <img src="../assets/image/arrow.svg" alt="" />
+            <img src="../assets/image/arrow.svg" alt="" class="group-hover:translate-x-2 ms-2" />
           </button>
         </div>
       </div>
@@ -240,10 +246,10 @@ register()
       <div class="text-center">
         <p class="text-xl font-bold mb-6 lg:text-2xxl lg:mb-10">想要合作或瞭解更多？</p>
         <button
-          class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto lg:text-xl lg:px-8 lg:py-4"
+          class="bg-primary-900 text-primary-50 font-bold rounded-[5px] flex items-center px-4 py-2 mx-auto hover:bg-primary-700 group lg:text-xl lg:px-8 lg:py-4"
         >
           詳細內容與合作流程
-          <img src="../assets/image/arrow.svg" alt="arrow" class="ml-2" />
+          <img src="../assets/image/arrow.svg" alt="arrow" class="group-hover:translate-x-2 ml-2" />
         </button>
       </div>
     </div>
@@ -272,11 +278,11 @@ register()
         }"
       >
         <swiper-slide class="mb-12 lg:mb-0">
-          <RouterLink to="/article" class="block">
+          <RouterLink to="/article" class="block group">
             <img
               src="../assets/image/article-image2.png"
               alt="article-image"
-              class="w-full object-cover rounded-lg"
+              class="w-full object-cover rounded-lg group-hover:opacity-70"
             />
             <div class="pt-4 px-2">
               <h4 class="font-bold text-xl mb-4">
@@ -290,11 +296,11 @@ register()
           </RouterLink>
         </swiper-slide>
         <swiper-slide class="mb-12 lg:mb-0">
-          <RouterLink to="/article" class="block">
+          <RouterLink to="/article" class="block group">
             <img
               src="../assets/image/article-image3.png"
               alt="article-image"
-              class="w-full object-cover rounded-lg"
+              class="w-full object-cover rounded-lg group-hover:opacity-70"
             />
             <div class="pt-4 px-2">
               <h4 class="font-bold text-xl mb-4">
@@ -308,11 +314,11 @@ register()
           </RouterLink>
         </swiper-slide>
         <swiper-slide>
-          <RouterLink to="/article" class="block">
+          <RouterLink to="/article" class="block group">
             <img
               src="../assets/image/article-image1.png"
               alt="article-image"
-              class="w-full object-cover rounded-lg"
+              class="w-full object-cover rounded-lg group-hover:opacity-70"
             />
             <div class="pt-4 px-2">
               <h4 class="font-bold text-xl mb-4">
@@ -326,11 +332,11 @@ register()
           </RouterLink>
         </swiper-slide>
         <swiper-slide class="mb-12 lg:mb-0">
-          <RouterLink to="/article" class="block">
+          <RouterLink to="/article" class="block group">
             <img
               src="../assets/image/article-image2.png"
               alt="article-image"
-              class="w-full object-cover rounded-lg"
+              class="w-full object-cover rounded-lg group-hover:opacity-70"
             />
             <div class="pt-4 px-2">
               <h4 class="font-bold text-xl mb-4">
